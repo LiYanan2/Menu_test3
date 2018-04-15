@@ -48,4 +48,21 @@ public class MainActivity extends AppCompatActivity {
         //返回值必须为true，不然菜单无法显示
         return true;
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.files:
+                return true;
+            case R.id.new_file:
+                return true;
+            case R.id.file_save:
+                return true;
+            case R.id.file_more:
+                return true;
+            case R.id.file_help:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }
