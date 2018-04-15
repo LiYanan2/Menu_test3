@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/option1"
+        android:icon="@mipmap/icon1"
+        android:title="普通菜单1"
+        app:showAsAction="ifRoom"></item>
+    <!--如果有空间则显示出来-->
+    <item
+        android:id="@+id/option2"
+        android:icon="@mipmap/icon2"
+        android:title="普通菜单2"
+        app:showAsAction="always"></item>
+    <!--永远会被显示出来-->
+    <item
+        android:id="@+id/option3"
+        android:icon="@mipmap/icon3"
+        android:title="普通菜单3"
+        app:showAsAction="withText|always"></item>
+    <!--无论是否定义icon只显示其文字，默认在溢出菜单中-->
+    <item
+        android:id="@+id/option4"
+        android:icon="@mipmap/icon4"
+        android:title="普通菜单4"
+        app:showAsAction="collapseActionView"></item>
+    <!--待定-->
+    <item
+        android:id="@+id/option5"
+        android:icon="@mipmap/icon5"
+        android:title="普通菜单5"
+        app:showAsAction="never"></item>
+    <!--永远出现在溢出菜单中-->
+</menu>
